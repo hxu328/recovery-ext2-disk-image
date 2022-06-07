@@ -1,6 +1,8 @@
-# recovery-ext2-disk-image
-recover all image files from an ext2 disk image, including content recovery of the jpg images (the first part) and image file name recovery (the second part).
+1. Invoking the program
+	make
+	./runScan path/to/disk/image output/directory/path
+2. Possible problems
+	the file-<inode number>.jpg and <actual filename>.jpg are hard linked to the same inode in the output directory
+3. Removing the executable file and output directory (assume the output directory is named as: output)
+	make clean
 
-## Program Spec.
-1. Here is how your program will be called: % ./runscan anImageDisk outputDirectory
-2. For example: % ./runscan image-01 output01
