@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include "read_ext2.h"
 
-/* implementations credit to
- * Smith College
- * http://www.science.smith.edu/~nhowe/Teaching/csc262/oldlabs/ext2.html
- */
-
 unsigned int block_size = 1024;         /* default 1kB block size */
 unsigned int inodes_per_block = 0;                      /* number of inodes per block */
 unsigned int itable_blocks = 0;                         /* size in blocks of the inode table */
